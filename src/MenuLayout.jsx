@@ -51,7 +51,7 @@ import Special8 from "./components/Pages/special/Special8";
 const menuItems = [
   { name: "Sixer_Special_Combo", component: <Special1 />, data: special1data },
   { name: "Boundary_Buster_Combo", component: <Special2 />, data: special2data},
-  { name: "Powerplay_Feast", component: <Special3 />, data: special3data },
+  { name: "Powerplay_Feast", component: <Special3 />, data: special3data }, 
   { name: "Wicket_Whopper_Combo", component: <Special4 />, data: special4data },
   { name: "Champions_Clash_Combo", component: <Special5 />, data: special5data },
   { name: "Fifty_Over_Fiesta", component: <Special6 />, data: special6data },
