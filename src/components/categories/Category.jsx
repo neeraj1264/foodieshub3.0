@@ -15,11 +15,27 @@ import {
   SandwichData,
   ShakesData,
   SnacksData,
+  special1data,
+  special2data,
+  special3data,
+  special4data,
+  special5data,
+  special6data,
+  special7data,
+  special8data,
   WrapData,
 } from "../data/FoodData"; // Update the import path
 
 // Mapping category names to their data arrays
 const categoryToDataMap = {
+  Sixer_Special_Combo: special1data,
+  Boundary_Buster_Combo: special2data,
+  Powerplay_Feast: special3data,
+  Wicket_Whopper_Combo: special4data,
+  Champions_Clash_Combo: special5data,
+  Fifty_Over_Fiesta: special6data,
+  TossUp_Treat_Combo: special7data,
+  Match_Winner_Meal: special8data,
   burger: BurgerData,
   chaap: ChaapData,
   dinner: DinnerData,
