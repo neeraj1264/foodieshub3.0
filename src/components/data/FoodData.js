@@ -1,5 +1,3 @@
-import GarlicBread from "../Pages/GarlicBread";
-
 export const BurgerData = [
   { id: 14, name: 'Aloo Tikki Burger', image: '/img/burger/aloo-tikki-burger.png', description: 'A perfect harmony of spiced potato patties with zesty sauces, sandwiched between soft burger buns. ', price: 50, mrp: '60' },
   { id: 15, name: 'Veg Cheese Burger', image: '/img/burger/cheese-burger.png', description: 'Satisfy your cravings with our Veg Cheese Burger, a delicious symphony of flavors and textures. ', price: 65, mrp: '80' },
@@ -133,15 +131,15 @@ export const DinnerData = [
   ];
 
   export const ShakesData = [
-    { id:125, name: 'Mango Shake with Ice Cream',  image: '/img/shakes/mango.jpeg', description: 'Indulge in the ultimate mango indulgence with our Mango Shake, enhanced with luxurious ice cream and a sprinkle of premium dry fruits. Our mango shake is crafted from the finest ripe mangoes, blended to perfection to achieve a smooth and creamy texture that tantalizes your taste buds with each sip. ', price: 70, mrp: '90' },
-    { id:126, name: 'Banana Shake with Ice Cream', image: '/img/shakes/banana.png', description: 'Indulge in pure bliss with our Banana Bliss Shake, elevated to new heights with the addition of creamy ice cream and wholesome dry fruits. Each sip is a symphony of flavors, as the natural sweetness of ripe bananas mingles with the velvety richness of ice cream, creating a luxurious texture that melts in your mouth. ', price: 60, mrp: '80' },
-    { id:127, name: 'Papaya Shake with Ice Cream', image: '/img/shakes/papaya.png', description: 'Indulge in a luxurious blend of tropical flavors with our Papaya Shake Delight, enhanced with creamy ice cream and a sprinkle of tantalizing dry fruits. Immerse yourself in the velvety smoothness of ripe papaya, expertly blended to perfection for a refreshing treat. ', price: 60, mrp: '80' },
+    { id:125, name: 'Mango Shake',  image: '/img/shakes/mango.jpeg', description: 'Indulge in the ultimate mango indulgence with our Mango Shake, enhanced with luxurious ice cream and a sprinkle of premium dry fruits. Our mango shake is crafted from the finest ripe mangoes, blended to perfection to achieve a smooth and creamy texture that tantalizes your taste buds with each sip. ', price: 70, mrp: '90' },
+    { id:126, name: 'Banana Shake', image: '/img/shakes/banana.png', description: 'Indulge in pure bliss with our Banana Bliss Shake, elevated to new heights with the addition of creamy ice cream and wholesome dry fruits. Each sip is a symphony of flavors, as the natural sweetness of ripe bananas mingles with the velvety richness of ice cream, creating a luxurious texture that melts in your mouth. ', price: 60, mrp: '80' },
+    { id:127, name: 'Papaya Shake', image: '/img/shakes/papaya.png', description: 'Indulge in a luxurious blend of tropical flavors with our Papaya Shake Delight, enhanced with creamy ice cream and a sprinkle of tantalizing dry fruits. Immerse yourself in the velvety smoothness of ripe papaya, expertly blended to perfection for a refreshing treat. ', price: 60, mrp: '80' },
     { id: 26, name: 'Strawberry Shake',            image: '/img/shakes/strawberry.png', description: 'Quench your thirst with our luscious Strawberry Shake. Made with plump, juicy strawberries blended to perfection with creamy milk.', price: 90, mrp: '120' },
     { id: 27, name: 'Oreo Shake',                  image: '/img/shakes/oreo.png', description: 'Each sip is a heavenly fusion of chocolatey Oreo goodness and the smoothness of milk, creating a decadent treat for your taste buds.', price: 90, mrp: '120' },
     { id: 28, name: 'Vanilla Shake',               image: '/img/shakes/vanilla.jpeg', description: ' Each sip is a celebration of the sweet and comforting essence of vanilla, offering a perfect balance of creaminess and flavor.', price: 90, mrp: '120' },
     { id: 29, name: 'Butter Scotch Shake',         image: '/img/shakes/butter.jpeg', description: 'Treat yourself to the decadent delight of our Butterscotch Shake. A heavenly blend of creamy milk and luscious butterscotch syrup.', price: 100, mrp: '120' },
     { id: 30, name: 'Chocolate Shake',             image: '/img/shakes/choco.jpg', description: 'Dive into the irresistible decadence of our Chocolate Shake. A velvety fusion of rich chocolate syrup and creamy milk.', price: 90, mrp: '120' },
-    { id: 31, name: 'Cold Coffee with Ice Cream',  image: '/img/shakes/coffee.jpeg', description: 'Savor the luxurious combination of rich, velvety cold coffee infused with the decadent creaminess of ice cream, crowned with a medley of crunchy dry fruits. Our Cold Coffee with Ice Cream and Dry Fruits Indulgence is a symphony of indulgent flavors and textures that will elevate your coffee experience to new heights. ', price: 80, mrp: '100' },
+    { id: 31, name: 'Cold Coffee',  image: '/img/shakes/coffee.jpeg', description: 'Savor the luxurious combination of rich, velvety cold coffee infused with the decadent creaminess of ice cream, crowned with a medley of crunchy dry fruits. Our Cold Coffee with Ice Cream and Dry Fruits Indulgence is a symphony of indulgent flavors and textures that will elevate your coffee experience to new heights. ', price: 80, mrp: '100' },
   ];
 
   export const SnacksData = [
@@ -158,6 +156,58 @@ export const DinnerData = [
     { id: 60, name: 'Mix Veg Parcel', image: '/img/wrap/Mixparcel.jpeg', description: 'Indulge in the delectable richness of our Paneer Parcel, a culinary delight that wraps spiced and succulent paneer (Indian cottage cheese) in a golden-brown.', price: 70, mrp: '100' },
   ];
 
+  export const special1data = [
+    { id: 200, name: 'Hangover Burger', image: '/img/burger/hangover-burger.png', description: 'Introducing our Hangover Burger – the ultimate cure for your cravings!', price: 75, mrp: '95' },
+    { id: 201, name: 'Cheese Corn Garlic Bread', image: '/img/gb.jpg', description: 'Indulge in the perfect harmony of flavors with our Cheese Corn Garlic Bread. ', price: 110, mrp: '130' },
+    { id: 202, name: 'Strawberry Shake',            image: '/img/shakes/strawberry.png', description: 'Quench your thirst with our luscious Strawberry Shake. Made with plump, juicy strawberries blended to perfection with creamy milk.', price: 90, mrp: '120' },
+     ];
+
+  export const special2data = [
+    { id: 203, name: 'Veg Cheese Burger', image: '/img/burger/cheese-burger.png', description: 'Satisfy your cravings with our Veg Cheese Burger, a delicious symphony of flavors and textures. ', price: 65, mrp: '80' },
+    { id: 204,  name: "Paneer Onion Pizza",               image: '/img/pizza/paneer.jpeg', description: 'Experience a delightful fusion of flavors with our Onion Paneer Pizza. ', price: {priceR: '150',priceM: '270',priceL: '390'} , mrp: '200', size: {size1: 'Regular', size2: 'Mediun', size3: 'Large'}},
+    { id: 205, name: 'Pomegranate Juice', image: '/img/juice/anar.jpeg',      description: 'Known for its deep red color and sweet-tart taste, pomegranate juice is a powerhouse of antioxidants and essential nutrients.',                                                   price: 90 , mrp: '140' },
+  ];
+
+  export const special3data = [
+    { id: 206, name: 'Aloo Tikki Burger', image: '/img/burger/aloo-tikki-burger.png', description: 'A perfect harmony of spiced potato patties with zesty sauces, sandwiched between soft burger buns. ', price: 50, mrp: '60' },
+    { id: 207, name: 'Red Sauce Pasta',   image: '/img/pasta/redpasta.jpg', description: 'Savor the robust flavors of our Red Sauce Pasta, where pasta is generously coated in a savory tomato-based sauce.', price: 110, mrp: '140' },
+    { id: 208, name: 'Stuff Garlic Bread', image: '/img/gb.jpg', description: 'Delight your senses with our Stuffed Garlic Bread, a mouthwatering twist on a classic favorite.', price: 120, mrp: '140' },
+  ];
+
+  export const special4data = [
+    { id: 209, name: 'Hangover Burger', image: '/img/burger/hangover-burger.png', description: 'Introducing our Hangover Burger – the ultimate cure for your cravings!', price: 75, mrp: '95' },
+    { id: 210, name: 'Mix Pakode [250 gm]', image: '/img/chaat/pakore.jpeg', description: 'Savor the crispy goodness of our Mix Pakode, a delightful assortment of deep-fried fritters showcasing a mix of vegetables, gram flour, and aromatic spices. ', price: 60, mrp: '75' },
+    { id: 211, name: 'Cold Coffee',  image: '/img/shakes/coffee.jpeg', description: 'Savor the luxurious combination of rich, velvety cold coffee infused with the decadent creaminess of ice cream, crowned with a medley of crunchy dry fruits. Our Cold Coffee with Ice Cream and Dry Fruits Indulgence is a symphony of indulgent flavors and textures that will elevate your coffee experience to new heights. ', price: 80, mrp: '100' },
+ ];
+
+  export const special5data = [
+    { id: 212, name: 'Mix Sauce Pasta',   image: '/img/pasta/mixpasta.jpg', description: 'Introducing our Mix Sauce Pasta, a delightful fusion that brings together the best of both red and white sauces.', price: 140, mrp: '180' },
+    { id: 213, name: 'Paneer Tikki Wrap', image: '/img/wrap/paneerwrap.jpeg', description: ' This delectable creation features spiced and grilled paneer (Indian cottage cheese) patties, perfectly wrapped in a warm tortilla along with fresh veggies and flavorful sauces.', price: 120, mrp: '150' },
+    { id: 214, name: "Italian Pizza",              image: '/img/pizza.png', description: 'Topping: Capsicum , Jalapenos , Mushroom , Sweetcorn', price: {priceR: '190',priceM: '370',priceL: '500'} , mrp: '250', size: {size1: 'Regular', size2: 'Medium', size3: 'Large'}},
+    { id: 215, name: 'Mix Fruit Juice',   image: '/img/juice/mix.jpeg',      description: 'Delight your taste buds with the zesty freshness of mosambi (sweet lime), perfectly complemented by the tropical sweetness of pineapple.',                                                   price: 60 , mrp: '90' },
+  ];
+
+  export const special6data = [
+    { id: 216, name: 'White Sauce Pasta', image: '/img/pasta/whitepasta.jpg', description: 'Delight in the creamy indulgence of our White Sauce Pasta. creamy and delightful choice for any pasta enthusiast.', price: 120, mrp: '150' },
+    { id: 217, name: 'Cheese Corn Garlic Bread', image: '/img/gb.jpg', description: 'Indulge in the perfect harmony of flavors with our Cheese Corn Garlic Bread. ', price: 110, mrp: '130' },
+    { id: 218, name: 'Vanilla Shake',               image: '/img/shakes/vanilla.jpeg', description: ' Each sip is a celebration of the sweet and comforting essence of vanilla, offering a perfect balance of creaminess and flavor.', price: 90, mrp: '120' },
+    { id: 219, name: 'Paneer Parcel', image: '/img/wrap/paneerparcel.jpeg', description: 'Experience the joy of unwrapping a delicious surprise with our Mix Veg Parcel.', price: 70, mrp: '100' },
+  ];
+
+  export const special7data = [
+    { id: 220, name: 'Aloo Tikki Burger', image: '/img/burger/aloo-tikki-burger.png', description: 'A perfect harmony of spiced potato patties with zesty sauces, sandwiched between soft burger buns. ', price: 50, mrp: '60' },
+    { id: 221,name: "Onion Pizza[6 inches]",      image: '/img/pizza/onionpizza.png', description: 'It is a delightful choice for onion enthusiasts and pizza lovers alike.', price:    '80', mrp: '100'},
+    { id: 222, name: 'Stuff Garlic Bread', image: '/img/gb.jpg', description: 'Delight your senses with our Stuffed Garlic Bread, a mouthwatering twist on a classic favorite.', price: 120, mrp: '140' },
+    { id: 223, name: 'Mix Fruit Juice',   image: '/img/juice/mix.jpeg',      description: 'Delight your taste buds with the zesty freshness of mosambi (sweet lime), perfectly complemented by the tropical sweetness of pineapple.',                                                   price: 60 , mrp: '90' },
+ ];
+
+  export const special8data = [
+    { id: 224, name: 'Hangover Burger', image: '/img/burger/hangover-burger.png', description: 'Introducing our Hangover Burger – the ultimate cure for your cravings!', price: 75, mrp: '95' },
+    { id: 225, name: 'Kadhai Paneer',   size: {size1: 'Half' , size2: 'Full'}, image: '/img/dinner/kadaipaneer.jpeg', description: 'The dish is cherished for its vibrant colors, bold flavors, and the perfect balance of spiciness and creaminess, making it a favorite in Indian cuisine.', price: {priceH:100, priceF: 160}, mrp: '190'},
+    { id: 226, size: {size1: 'Half' , size2: 'Full'}, name: 'Butter Naan',  image: '/img/dinner/butternaan.jpeg',  description: 'Butter naan is a delectable Indian flatbread known for its soft and fluffy texture, enriched with the indulgent flavor of butter.', price: 30, mrp: '40' },
+    { id: 227, size: {size1: 'Half' , size2: 'Full'}, name: 'Fried Rice',  image: '/img/dinner/friedrice.jpeg',   description: 'Fried rice can be customized with different vegetables, proteins, and seasonings, making it a flexible and delicious option.', price: 130, mrp: '160' },
+  ];
+
 export const allItems = [
     ...BurgerData,
     ...pastaData,
@@ -171,4 +221,12 @@ export const allItems = [
     ...ShakesData,
     ...SnacksData,
     ...WrapData,
+    ...special1data,
+    ...special2data,
+    ...special3data,
+    ...special4data,
+    ...special5data,
+    ...special6data,
+    ...special7data,
+    ...special8data,
 ]

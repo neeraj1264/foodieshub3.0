@@ -34,6 +34,14 @@ const categoryToDataMap = {
   sandwich: SandwichData,
 };
 const categories = [
+  { id: 14, image: "/img/pizza.png",     name: "Sixer_Special_Combo"},
+  { id: 15, image: "/img/pizza.png",     name: "Boundary_Buster_Combo"},
+  { id: 16, image: "/img/pizza.png",     name: "Powerplay_Feast"},
+  { id: 17, image: "/img/pizza.png",     name: "Wicket_Whopper_Combo"},
+  { id: 18, image: "/img/pizza.png",     name: "Champions_Clash_Combo"},
+  { id: 19, image: "/img/pizza.png",     name: "Fifty_Over_Fiesta"},
+  { id: 20, image: "/img/pizza.png",     name: "TossUp_Treat_Combo"},
+  { id: 21, image: "/img/pizza.png",     name: "Match_Winner_Meal"},
     { id: 1, image: "/img/pizza.png",     name: "burger"},
     { id: 8, image: "/img/pizza.png",     name: 'pasta'},
     { id: 9, image: "/img/pizza.png",     name: 'pizza'},
