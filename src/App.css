@@ -16,7 +16,8 @@ a {
     #1a1a1a 100%
   );;
   --light: #edf2f7;
-  --yellow: #fea116;
+  --yellow: #0178ff;
+  /* --yellow: --yellow; */
   background: var(--in);
 }
 /* .main-content {
@@ -83,11 +84,11 @@ body.dark-theme {
   border-radius: 25px;
 }
 .add-btn button {
-  color: #0f7d4a;
+  color: var(--yellow);
   font-weight: 800;
   padding: 5px 20px;
   font-size: 1.2rem;
-  background: #052202;
+  background: #021622;
   border-radius: 25px;
   border: 1px solid;
 }

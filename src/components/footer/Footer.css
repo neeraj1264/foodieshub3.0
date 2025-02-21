@@ -53,7 +53,7 @@ footer {
 }
 .nav-link .icon {
   font-size: 1.3rem;
-  color: var(--out);
+  color: var(--yellow);
   background: white;
   border-radius: 3rem;
   margin-bottom: .3rem;

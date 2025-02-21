@@ -85,7 +85,7 @@ bottom: -14px;
   position: fixed;
   bottom: 2rem; /* Adjust as needed */
   right: 20px;  /* Adjust as needed */
-  background-color: #25D366; /* WhatsApp green */
+  background-color: var(--yellow); /* WhatsApp green */
   color: white;
   border-radius: 50%;
   width: 60px; /* Adjust size as needed */

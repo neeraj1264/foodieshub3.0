@@ -84,7 +84,7 @@
   font-size: 18px;
   font-weight: bold;
   color: white;
-  background-color: var(--yellow);
+  background: var(--yellow);
   border: none;
   border-radius: 8px;
   cursor: pointer;

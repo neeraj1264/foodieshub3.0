@@ -16,7 +16,7 @@
     /* font-weight: bold; */
 }
 .bttn {
-    background: #ea9a24 !important;
+    background: var(--yellow) !important;
     color: white;
     font-family: auto;
     font-size: 1.3rem;

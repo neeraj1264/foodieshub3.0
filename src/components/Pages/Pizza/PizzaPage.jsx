@@ -83,53 +83,35 @@ const PizzaPage = ({ id, name, description, price, image, mrp, size }) => {
     {
       name: "Extra Cheese",
       key: "extraCheese",
-      prices: { R: 35, M: 50, L: 90 },
+      prices: { R: 40, M: 60, L: 90 },
     },
     {
       name: "CheeseBrust",
       key: "cheeseburst",
-      prices: { R: 60, M: 90, L: 110 },
+      prices: { R: 40, M: 60, L: 90 },
     },
-    { name: "PanBase", key: "PanBase", prices: { R: 10, M: 20, L: 30 } },
-    { name: "ThinCrust", key: "ThinCrust", prices: { R: 20, M: 30, L: 50 } },
   ]
   const toppingList = [
     {
       name: "onion",
       key: "onion",
-      prices: { R: 25, M: 35, L: 55 },
+      prices: { R: 30, M: 50, L: 70 },
     }, {
       name: "capsicum",
       key: "capsicum",
-      prices: { R: 25, M: 35, L: 55 },
-    }, {
-      name: "paneer",
-      key: "paneer",
-      prices: { R: 25, M: 35, L: 55 },
+      prices: { R: 30, M: 50, L: 70 },
     }, {
       name: "mushroom",
       key: "mushroom",
-      prices: { R: 25, M: 35, L: 55 },
+      prices: { R: 30, M: 50, L: 70 },
     }, {
-      name: "jalapeno",
-      key: "jalapeno",
-      prices: { R: 25, M: 35, L: 55 },
-    }, {
-      name: "Red peper",
-      key: "Red peper",
-      prices: { R: 25, M: 35, L: 55 },
-    },{
       name: "corn",
       key: "corn",
-      prices: { R: 25, M: 35, L: 55 },
-    },{
-      name: "black olives",
-      key: "black olives",
-      prices: { R: 25, M: 35, L: 55 },
+      prices: { R: 30, M: 50, L: 70 },
     },{
       name: "tomato",
       key: "tomato",
-      prices: { R: 25, M: 35, L: 55 },
+      prices: { R: 30, M: 50, L: 70 },
     },
   ];
 
@@ -637,7 +619,7 @@ const PizzaPage = ({ id, name, description, price, image, mrp, size }) => {
               <button
                 style={{
                   color: "whitesmoke",
-                  background: "var(--in)",
+                  background: "var(--yellow)",
                   boxShadow: "var(--out) 1px 0px 3px 3px",
                 }}
                 onClick={handleRemoveToCart}

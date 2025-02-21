@@ -4,7 +4,7 @@
     background: var(--in);
 }
 .fa-3x{
-    color: #FEA116 !important;
+    color: --yellow !important;
 }
 .p4{
     box-shadow: 2px 2px 2px 2px wheat;
