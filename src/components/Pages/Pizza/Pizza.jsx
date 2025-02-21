@@ -5,7 +5,7 @@ import { PizzaData } from "../../data/FoodData";
 const Pizza = () => {
   return (
     <div>
-      <h2 id="pizza" style={{ textAlign: "center", marginTop: "8rem" }}>
+      <h2 id="pizza" className='category-header'>
         Delicious Pizza
       </h2>
       {PizzaData.map((Pizza) => (

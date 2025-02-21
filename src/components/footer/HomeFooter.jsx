@@ -54,12 +54,12 @@ const HomeFooter = () => {
           <h3>Follow Us</h3>
           <p>
             <a
-              href="https://www.instagram.com/australian_bite?igsh=MTNvOXZzbGl0eDV2cw%3D%3D&utm_source=qr"
+              href="https://www.facebook.com/share/1KfKFe7WJN/"
               target="_blank"
               className="social-icon insta"
             >
-              <i className="fab fa-instagram"></i>
-              <span>Instagram</span>
+              <i className="fab fa-facebook"></i>
+              <span>Facebook</span>
             </a>
           </p>
           <p>

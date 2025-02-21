@@ -1,5 +1,5 @@
 .home-footer {
-  background-color: var(--in);
+  background: var(--in);
   color: white;
   padding: 40px 20px;
   font-family: Arial, sans-serif;

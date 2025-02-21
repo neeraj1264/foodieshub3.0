@@ -131,3 +131,20 @@ bottom: -14px;
 .menu-button:hover {
   background-color: var(--out); /* Customize hover effect */
 }
+
+/* .special-img {
+  width: 40%;
+  margin: 6% 30% 0%;
+  height: 93vh;
+} */
+.special-img{
+  width: 90%;
+  margin: 20% 5% 0%;
+  height: 65vh;
+}
+.special-text{
+  text-align: center;
+  font-size: 1.3rem;
+  padding: .5rem 1rem;
+  font-weight: bold;
+}

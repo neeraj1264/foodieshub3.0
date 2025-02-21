@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Carousel } from 'react-bootstrap';
 import './Banner.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Header from '../header/Header';
 import ContactForm from '../ContactUs/Contact';
 import { FaWhatsapp } from "react-icons/fa";
@@ -30,22 +30,28 @@ const items = [
 
 const MyCarousel = () => {
   const [index, setIndex] = useState(0);
+  const navigate = useNavigate();
 
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
-    audioRef.current = new Audio('/audio/audio.mp3'); // Ensure this file is in the public folder
-    audioRef.current.loop = true; // Loop audio if needed
-  }, []);
+    audioRef.current = new Audio('/audio/india.mp3'); // Ensure this file is in the public folder
+    audioRef.current.loop = false; // Loop audio if needed
 
-  const playAudio = () => {
-    if (audioRef.current) {
-      audioRef.current.play().then(() => {
-        setIsPlaying(true);
-      }).catch(err => console.log('Autoplay blocked:', err));
-    }
-  };
+    const handleScroll = () => {
+      if (!isPlaying) {
+        audioRef.current.play().then(() => {
+          setIsPlaying(true);
+          window.removeEventListener('scroll', handleScroll); // Remove event after playing once
+        }).catch(err => console.log('Autoplay blocked:', err));
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isPlaying]);
+
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
@@ -63,7 +69,7 @@ const MyCarousel = () => {
   }, []); // Empty dependency array ensures this effect runs once when the component mounts
 
   const handleChatMsg = () => {
-    const whatsappNumber = "+917404339777";
+    const whatsappNumber = "+917015823645";
     const message = `Hello! I'm interested in placing an order. Could you please provide me with more information about your menu options and delivery timings? Thanks!`;
 
     const whatsappLink =
@@ -80,39 +86,18 @@ const MyCarousel = () => {
 
   return (
     <>
-        <div onClick={playAudio} style={{ cursor: 'pointer' }}>
-
         <Header/>
-        <img src="./img/indvspak.jpg" alt="" srcset="" style={{width: "90%", margin: "20% 5% 0%"}} />
+        <img src="./img/indvspak.jpg" alt="" className="special-img" onClick={()=> {navigate("/menu");}} />
+        <p className='special-text'>1️⃣ "BIG MATCH, BIG BITES! 🍔🔥 Order Now & Enjoy the Thrill!"
+        </p>
         <Hero/>
         <Services/>
         <About/>
-        {/* <div className="front-image">
-  <img src="/img/outer2.jpg" alt="Delicious Food" />
-  <Link to="/menu" className="menu-button">
-    Visit Our Menu
-  </Link>
-</div> */}
-
-    {/* <Carousel activeIndex={index} onSelect={handleSelect} controls={false}>
-    {items.map((item) => (
-        <Carousel.Item key={item.id}>
-            <div className="carousel-inner">
-
-      <Link
-       to={`/menu`}>
-          <img className="d-block" src={item.imageUrl} alt={item.title} />
-          </Link>
-          </div>
-        </Carousel.Item>
-      ))}
-    </Carousel> */}
     <FaWhatsapp className='whatsapp-button' onClick={() => handleChatMsg()}/>
 
       <GoogleMap/>
 <ContactForm/>
 <HomeFooter/>
-</div>
     </>
   );
 };

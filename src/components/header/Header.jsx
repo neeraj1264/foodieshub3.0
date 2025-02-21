@@ -119,7 +119,7 @@ const Header = ({ headerName, setSearch, onClick }) => {
                 Contact Us
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 to="/team"
                 className="nav-link custom-text"
@@ -127,7 +127,7 @@ const Header = ({ headerName, setSearch, onClick }) => {
               >
                 Our Team
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link
                 to="/feedback"
@@ -139,10 +139,10 @@ const Header = ({ headerName, setSearch, onClick }) => {
             </li>
             <li className="theme-mode">
         {/* Dark Mode Toggle Switch */}
-              <label className="theme-switch">
+              {/* <label className="theme-switch">
                 <input type="checkbox" checked={!isDarkMode} onChange={toggleTheme} />
                 <span className="slider"></span>
-              </label>
+              </label> */}
             </li>
           </ul>
         </div>

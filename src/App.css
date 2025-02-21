@@ -83,12 +83,13 @@ body.dark-theme {
   border-radius: 25px;
 }
 .add-btn button {
-  color: var(--in);
+  color: #0f7d4a;
   font-weight: 800;
   padding: 5px 20px;
   font-size: 1.2rem;
-  background: #eee;
+  background: #052202;
   border-radius: 25px;
+  border: 1px solid;
 }
 .added {
   border: none;

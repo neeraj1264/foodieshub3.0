@@ -36,15 +36,15 @@ const menuItems = [
   { name: "Burger",  component: <Burger menu={true} />,  data: BurgerData,},
   { name: "Pasta ", component: <Pasta />, data: pastaData },
   { name: "Pizza", component: <Pizza />, data: PizzaData },
-  { name: "Chaap", component: <Chaap />, data: ChaapData },
-  { name: "GarlicBread", component: <GarlicBread />, data: GarlicBreadData },
-  { name: "Dinner",  component: <Dinner />,  data: DinnerData,},
-  { name: "Juice", component: <Juice />, data: JuiceData },
-  { name: "Naan", component: <Naan />, data: NaanData },
   { name: "Sandwich", component: <Sandwich />, data: SandwichData,},
+  { name: "GarlicBread", component: <GarlicBread />, data: GarlicBreadData },
   { name: "Shakes", component: <Shake />, data: ShakesData },
   { name: "Snacks", component: <Snacks />, data: SnacksData },
+  { name: "Chaap", component: <Chaap />, data: ChaapData },
+  { name: "Juice", component: <Juice />, data: JuiceData },
   { name: "Wrap", component: <Wrap/>, data: WrapData },
+  { name: "Dinner",  component: <Dinner />,  data: DinnerData,},
+  { name: "Naan", component: <Naan />, data: NaanData },
 ];
 
 const MenuLayout = ({ menu }) => {

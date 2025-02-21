@@ -7,7 +7,7 @@ const Services = () => {
   const services = [
     { icon: "fa-users", title: "About Us", id: "#about", description: "Learn more about our journey and passion for great food." },
   { icon: "fa-phone", title: "Contact Us", id: "#contact", description: "Get in touch with us for inquiries or support." },
-  { icon: "fa-user-tie", title: "Master Chefs", id: "#team", description: "Meet our expert chefs who create delicious dishes." },
+  // { icon: "fa-user-tie", title: "Master Chefs", id: "#team", description: "Meet our expert chefs who create delicious dishes." },
   { icon: "fa-comment-dots", title: "Feedback", id: "#feedback", description: "Share your experience and help us improve." }
   ];
 
@@ -22,7 +22,7 @@ const Services = () => {
               <div
                 ref={ref}
                 key={index}
-                className={`col-lg-3 col-sm-6 service-item-container ${
+                className={`col-lg-4 col-sm-6 service-item-container ${
                   inView ? "animate-fade-in-up" : "opacity-0"
                 }`}
                 data-wow-delay={`${0.2 * index}s`}
