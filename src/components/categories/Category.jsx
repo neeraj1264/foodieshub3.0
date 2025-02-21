@@ -35,7 +35,7 @@ const categoryToDataMap = {
   Champions_Clash_Combo: special5data,
   Fifty_Over_Fiesta: special6data,
   TossUp_Treat_Combo: special7data,
-  Match_Winner_Meal: special8data,
+  Match_Winner_Meal: special8data, 
   burger: BurgerData,
   chaap: ChaapData,
   dinner: DinnerData,
