@@ -102,7 +102,7 @@ const Cart = ({ id }) => {
         : 0;
 
       return total + basePrice + toppingsPrice + cheesesPrice;
-    }, 0); // Assuming 20 is the initial total (Service Charge)
+    }, 20); // Assuming 20 is the initial total (Service Charge)
   };
 
   useEffect(() => {
@@ -209,6 +209,7 @@ Amount   : *₹${total}*
 ${tableMessage}
     ----------Items----------\n
 ${productDetails}
+Service Charge = ₹ 20.00
 `;
 
     const whatsappLink =
@@ -294,7 +295,7 @@ ${productDetails}
                               <button
                                 onClick={() => dec(index)}
                                 style={{
-                                  background: "var(--in)",
+                                  background: "black",
                                   color: "var(--yellow)",
                                   borderRadius: "0.8rem 0 0 0.8rem",
                                   border: "none",
@@ -312,7 +313,7 @@ ${productDetails}
                               <button
                                 onClick={() => inc(index)}
                                 style={{
-                                  background: "var(--in)",
+                                  background: "black",
                                   color: "var(--yellow)",
                                   borderRadius: "0 0.8rem 0.8rem 0",
                                   border: "none",
@@ -325,7 +326,7 @@ ${productDetails}
                             </div>
                           </td>
                           <td
-                          className="cart-item-total"
+                          className="cart-item-total" style={{textAlign: "right"}}
                           >
                             ₹{calculateTotalForcartItem(item)}
                           </td>
@@ -346,9 +347,9 @@ ${productDetails}
                 {cartItems.length > 0 && (
                   <tr>
                     <td colSpan="4" className="delivery-row">
-                      Delivery Charge Free<span className="Kilometer">[Upto 5Km]</span>
+                      Service Charge<span className="Kilometer">[Upto 2km]</span>
                     </td>
-                    <td className="Delivery-amount">₹0</td>
+                    <td className="Delivery-amount">₹20</td>
                   </tr>
                 )}
 
