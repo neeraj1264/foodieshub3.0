@@ -3,12 +3,7 @@ a {
 }
 :root {
   --bg: #d32e2e;
-  --out: linear-gradient(
-    to right,
-    #1a1a1a 0%,
-    #111111 40%,
-    #000000 100%
-  );
+  --out:  linear-gradient(to right, #042918 0%, #111111 40%, #0b274f 100%);
   --in: linear-gradient(
     to right,
     #000000 0%,
@@ -18,7 +13,7 @@ a {
   --light: #edf2f7;
   --yellow: #0178ff;
   /* --yellow: --yellow; */
-  background: var(--in);
+  background: var(--out);
 }
 /* .main-content {
   margin-bottom: 4rem;
@@ -32,11 +27,11 @@ body.dark-theme {
   color: black !important; /* Light text */
 }
 .menu-items {
-  background: var(--in);
+  background: var(--out);
   margin-bottom: 5rem;
 }
 .menu-item {
-  background: var(--out);
+  background: var(--in);
   /* margin: 5rem .3rem 1rem; */
   border-radius: 1rem;
 }
@@ -88,7 +83,7 @@ body.dark-theme {
   font-weight: 800;
   padding: 5px 20px;
   font-size: 1.2rem;
-  background: #021622;
+  background: var(--out);
   border-radius: 25px;
   border: 1px solid;
 }

@@ -88,7 +88,7 @@ const MyCarousel = () => {
     <>
         <Header/>
         <img src="./img/indvspak.jpg" alt="" className="special-img" onClick={()=> {navigate("/menu");}} />
-        <p className='special-text'>1️⃣ "BIG MATCH, BIG BITES! 🍔🔥 Order Now & Enjoy the Thrill!"
+        <p className='special-text'>BIG MATCH, BIG BITES! 🍔🔥 Order Now & Enjoy the Thrill!
         </p>
         <Hero/>
         <Services/>
