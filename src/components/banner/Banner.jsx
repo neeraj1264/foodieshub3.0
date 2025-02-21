@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Carousel } from 'react-bootstrap';
 import './Banner.css'
 import { Link } from 'react-router-dom';
@@ -31,6 +31,21 @@ const items = [
 const MyCarousel = () => {
   const [index, setIndex] = useState(0);
 
+  const audioRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  useEffect(() => {
+    audioRef.current = new Audio('/audio/audio.mp3'); // Ensure this file is in the public folder
+    audioRef.current.loop = true; // Loop audio if needed
+  }, []);
+
+  const playAudio = () => {
+    if (audioRef.current) {
+      audioRef.current.play().then(() => {
+        setIsPlaying(true);
+      }).catch(err => console.log('Autoplay blocked:', err));
+    }
+  };
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
@@ -65,6 +80,8 @@ const MyCarousel = () => {
 
   return (
     <>
+        <div onClick={playAudio} style={{ cursor: 'pointer' }}>
+
         <Header/>
         <img src="./img/indvspak.jpg" alt="" srcset="" style={{width: "90%", margin: "20% 5% 0%"}} />
         <Hero/>
@@ -95,6 +112,7 @@ const MyCarousel = () => {
       <GoogleMap/>
 <ContactForm/>
 <HomeFooter/>
+</div>
     </>
   );
 };
