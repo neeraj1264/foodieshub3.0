@@ -1,0 +1,15 @@
+.table td img {
+    border: none;
+}
+.img-thumbnail{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 4px;
+}
+.btnn{
+    border-radius: 1rem;
+    border: 3px solid green;
+    font-weight: 800;
+    background-color: #388a38;
+    color: white;
+}

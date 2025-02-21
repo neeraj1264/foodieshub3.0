@@ -1,0 +1,7 @@
+.team-item {
+    box-shadow: 0 0 45px var(--in);
+    /* height: calc(100% - 38px); */
+    transition: .5s;
+    padding: 1rem 0;
+    background: var(--in);
+}

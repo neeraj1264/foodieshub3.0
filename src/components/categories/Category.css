@@ -1,0 +1,36 @@
+.card-text,
+.item-count {
+  transition: color 0.3s;
+}
+
+.card-text.active,
+.item-count.active {
+  color: var(--yellow); /* Color for active state */
+}
+.card-text {
+  font-size: 1rem;
+  padding: .5rem 0 0 1rem;
+  font-weight: bold;
+  background: var(--in);
+  width: fit-content;
+  color: white;
+  border: none;
+}
+.item-count{
+  font-size: 1rem;
+  padding: .5rem 1rem 0 1rem;
+  font-weight: bold;
+  background: var(--in);
+  width: fit-content;
+  color: white;
+  border: none;
+}
+.category-header {
+  font-size: 1.5rem;
+  text-align: left;
+  padding: .5rem;
+  color: whitesmoke;
+  font-family: 'Poppins', sans-serif;
+  line-height: 36px;
+  font-weight: 600;
+}

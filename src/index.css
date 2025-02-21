@@ -1,0 +1,194 @@
+.dark-theme .hero-header {
+  background: linear-gradient(rgb(93 139 255 / 90%), rgb(255 255 255 / 90%)),
+    url(/img/bg-hero.jpg);
+}
+.text-white .dark-theme {
+  color: black !important;
+}
+.dark-theme .main-content {
+  background: #eee;
+}
+.dark-theme .service-item {
+  background: white;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+}
+.dark-theme .service-item h5 {
+  color: black;
+}
+.dark-theme .welcome {
+  color: black;
+}
+.dark-theme .mb-4,
+.dark-theme .mb-5 {
+  color: black;
+}
+.dark-theme .team-item {
+  background: white;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+}
+.dark-theme .mb-0,
+.dark-theme small {
+  color: black;
+}
+.dark-theme .contact-heading {
+  color: black;
+}
+.dark-theme .contact-main {
+  background: white;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+}
+.dark-theme .contact h5,
+.dark-theme .contact p {
+  color: black;
+}
+.dark-theme .contact-header h2,
+.dark-theme .contact-header p {
+  color: black;
+}
+.dark-theme .contact-form-container {
+  background: white;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+}
+.dark-theme .contact-form label {
+  color: black;
+}
+.dark-theme .contact-form input,
+.dark-theme .contact-form textarea {
+  background-color: whitesmoke;
+}
+
+.dark-theme .menu-item {
+  background: white;
+}
+.dark-theme .category-header {
+  color: black;
+}
+.dark-theme .product-details {
+  color: black;
+}
+.dark-theme .add-btn button {
+  background: #eee;
+  color: var(--in);
+}
+.dark-theme hr {
+  color: var(--in);
+}
+.dark-theme .menu-items {
+  background-color: #eee;
+}
+.dark-theme .custom-navbar {
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px var(--yellow);
+}
+.dark-theme .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E ") !important ;
+}
+.dark-theme .custom-navbar .navbar-toggler {
+  border-color: var(--in);
+}
+.dark-theme footer {
+  background: white;
+  box-shadow: 0px 4px 5px 2px var(--in);
+}
+.dark-theme .cart {
+  color: var(--in);
+}
+.dark-theme .custom-text {
+  color: black !important;
+}
+.dark-theme .home-footer {
+  background: whitesmoke;
+}
+.dark-theme .home-footer-section p {
+  color: black;
+}
+.dark-theme .home-footer-links span {
+  color: black;
+}
+.dark-theme .social-icon {
+  color: black;
+}
+.dark-theme .cart-item-name {
+  color: black;
+}
+.dark-theme .cart-item-total {
+  color: black;
+}
+.dark-theme .delivery-row {
+  color: black;
+}
+.dark-theme .Delivery-amount {
+  color: black;
+}
+.dark-theme .cart-header {
+  background: white;
+  color: var(--yellow);
+  box-shadow: 2p 2px 2px 2px var(--yellow);
+  border: 3px solid;
+}
+.dark-theme .slider {
+  box-shadow: 0px 2px 15px 5px black;
+}
+.dark-theme .loading {
+  color: black;
+}
+.dark-theme .fa-home,
+.dark-theme .fa-phone,
+.dark-theme .fa-envelope {
+  color: black;
+}
+.dark-theme .menu-btn-container {
+  background: white;
+  box-shadow: 0px -3px 4px 0px var(--in);
+}
+.dark-theme .menu-search {
+  background: #eee;
+  animation: shadowGlow 1.5s infinite alternate ease-in-out;
+  color: black;
+  border: none;
+}
+@keyframes shadowGlow {
+    0% {
+        box-shadow: -2px 0px 2px var(--yellow)
+      }
+      25% {
+        box-shadow: -1px 1px 4px var(--yellow)
+      }
+      50% {
+        box-shadow: 0px 2px 6px var(--yellow)
+      }
+      75% {
+        box-shadow: 1px 1px 4px var(--yellow)
+      }
+      100% {
+        box-shadow: 2px 0px 2px var(--yellow)
+      }
+    
+    }
+.dark-theme .menu-btn {
+  background: #eee;
+  color: var(--yellow);
+  box-shadow: 0px 2px 3px 2px var(--yellow);
+}
+.dark-theme .table-info {
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px var(--yellow);
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.dark-theme .nettotal{
+    background: white;
+}
+.dark-theme .outer-card {
+background: white;
+}
+.dark-theme .card-text , .dark-theme .item-count{
+    color: black;
+    background: white;
+}
+.dark-theme .active{
+    color: var(--yellow);
+}
+.dark-theme .not-found{
+    color: black;
+}

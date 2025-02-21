@@ -1,0 +1,39 @@
+.hero-header {
+    background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url(/img/bg-hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-header img {
+    animation: imgRotate 50s linear infinite;
+}
+.container{
+    background: transparent;
+}
+.display-3 {
+    font-size: calc(1.525rem + 3.3vw);
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: "Nunito", sans-serif;
+    /* font-weight: bold; */
+}
+.bttn {
+    background: #ea9a24 !important;
+    color: white;
+    font-family: auto;
+    font-size: 1.3rem;
+    font-weight: 800;
+    padding: 0.6rem 1.6rem;
+    border-radius: 1rem;
+    margin: 0 !important;
+}
+@keyframes imgRotate { 
+    100% { 
+        transform: rotate(360deg); 
+    } 
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: rgba(255, 255, 255, 0.5);
+}
