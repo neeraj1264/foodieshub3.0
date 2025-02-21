@@ -66,6 +66,7 @@ const MyCarousel = () => {
   return (
     <>
         <Header/>
+        <img src="./img/indvspak.jpg" alt="" srcset="" style={{width: "90%", margin: "20% 5% 0%"}} />
         <Hero/>
         <Services/>
         <About/>

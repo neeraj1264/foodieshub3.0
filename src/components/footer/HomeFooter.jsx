@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const HomeFooter = () => {
   const handleChatMsg = () => {
-    const whatsappNumber = "+917404339777";
+    const whatsappNumber = "+917015823645";
     const message = `Hello! I'm interested in placing an order. Could you please provide me with more information about your menu options and delivery timings? Thanks!`;
 
     const whatsappLink =
@@ -30,18 +30,15 @@ const HomeFooter = () => {
             <span>
               <i className="fa fa-home"></i>
             </span>
-            <p>Ambarsari Farm, Kurukshetra Road Pehowa, (136128)</p>
-          </div>
+            <h5></h5>
+            <p> Foodies Hub Pehowa , Haryana , India (136128)</p>          </div>
           <div style={{ display: "flex" }}>
           <span>
               <i className="fa fa-phone"></i>
             </span>
             <div>
           <p>
-            +91 74043-39777
-          </p>
-          <p>
-            +91 74043-38777
+            +91 70158-23645
           </p>
           </div>
           </div>
@@ -49,7 +46,7 @@ const HomeFooter = () => {
             <span>
               <i className="fa fa-envelope"></i>
             </span>
-            australianbite41@gmail.com
+            foodieshub11@gmail.com
           </p>
         </div>
 
@@ -95,17 +92,13 @@ const HomeFooter = () => {
             {" "}
             <p className="footer-link">Contact Us</p>
           </Link>
-          <Link to="/team">
-            {" "}
-            <p className="footer-link">Our Team</p>
-          </Link>
           <Link to="/feedback">
             <p className="footer-link">Feedback</p>
           </Link>
         </div>
       </div>
       <div className="home-footer-links">
-        <p>Copyright © australianbite.online</p>
+        <p>Copyright © foodieshub.online</p>
         <p> All Rights Reserved.</p>
         <span>Design by Neeraj 70158-23645</span>
       </div>

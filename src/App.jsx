@@ -11,7 +11,7 @@ import GoogleMap from './components/map/GoogleMap';
 import Feedback from './components/ContactUs/Contact';
 import About from './components/about/About';
 import Team from './components/team/Team';
-import Digitalmenu from './Digitalmenu';
+// import Digitalmenu from './Digitalmenu';
 
 function App() {
   const location = useLocation();
@@ -88,7 +88,7 @@ function App() {
       <Route path="cart" element={<Cart />} />
       <Route path="team" element={<Team />} />
       <Route path="menu" element={<MenuLayout/>} />
-      <Route path="digitalmenu" element={<Digitalmenu/>} />
+      {/* <Route path="digitalmenu" element={<Digitalmenu/>} /> */}
       <Route path="MyCarousel" element={<MyCarousel />} />
     </Route>
   </Routes>  

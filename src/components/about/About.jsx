@@ -3,7 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import "./About.css";
 import Header from "../header/Header";
 import HomeFooter from "../footer/HomeFooter";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import OfferImg from "/img/offer.png";
+import aboutUsImage from "/img/about.png";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const About = () => {
@@ -12,83 +13,25 @@ const About = () => {
   return (
 <>
       {location.pathname === "/about" && <Header />}
-    <div className="container-xxl py-5">
-      <div className="container">
-        <div className="row g-5 align-items-center">
-        <h5 className="about-title" id="about">
-              About Us
-            </h5>
-          {/* Image Grid */}
-          <div className="col-lg-6">
-            <div className="row g-3">
-              <div className="col-6 text-start">
-                <LazyLoadImage
-                  className="img-fluid rounded w-100 wow zoomIn"
-                  data-wow-delay="0.1s"
-                  src="/outer.jpg"
-                  alt="About 1"
-                  effect="blur"
-                  visibleByDefault={false} 
-                  delayTime={2300}
-                />
-              </div>
-              <div className="col-6 text-start">
-                <LazyLoadImage
-                  className="img-fluid rounded w-100 wow zoomIn"
-                  data-wow-delay="0.3s"
-                  src="/img/a2.jpg"
-                  alt="About 2"
-                  style={{ marginTop: "25%" }}
-                  effect="blur"
-                  visibleByDefault={false} 
-                  delayTime={300}
-                />
-              </div>
-              <div className="col-6 text-end">
-                <LazyLoadImage
-                  className="img-fluid rounded w-100 wow zoomIn"
-                  data-wow-delay="0.5s"
-                  src="/img/a3.jpg"
-                  alt="About 3"
-                  effect="blur"
-                  visibleByDefault={false} 
-                  delayTime={300}
-                />
-              </div>
-              <div className="col-6 text-end">
-                <LazyLoadImage
-                  className="img-fluid rounded w-100 wow zoomIn"
-                  data-wow-delay="0.7s"
-                  src="/img/a4.jpg"
-                  alt="About 4"
-                  effect="blur"
-                  visibleByDefault={false} 
-                  delayTime={300}
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Text Section */}
-          <div className="col-lg-6">
-
-            <h1 className="mb-4 welcome">
-              Welcome to <i className="fa fa-utensils me-2"></i>Australian Bite
-            </h1>
-            <p className="mb-4">
-            Welcome to our online food ordering platform! We bring you the best
-            flavors, fresh ingredients, and fast delivery. Whether you're
-            craving a quick bite or a full meal, we ensure a seamless
-            experience, from browsing to checkout. <br />
-            <br />
-            Our mission is to deliver delicious meals right to your doorstep,
-            maintaining top-notch hygiene and taste. Join thousands of happy
-            customers who trust us for their daily meals! <br />
-            </p>
-
-          </div>
-        </div>
+      <div className="about-us-container" id="about">
+      <h3 className="about-heading">About Us</h3>
+      <img src={aboutUsImage} alt="About Us" className="about-us-image"/>
+      <div className="about-us-content">
+        <p>
+        Discover a world of flavors under one roof, from hearty breakfasts to delectable dinners,
+            and everything in between. Foodies Hub is your one-stop destination for a diverse culinary experience.
+         </p>
+         <p>
+            Craving pizza, burgers, or a heavenly slice of cake? Look no further!
+            Foodies Hub is the ultimate destination to satisfy all your culinary cravings in a single order.
+          </p>
+          <p>
+            Immerse yourself in a world where quality meets variety. Foodies Hub takes pride in offering a curated
+            selection of dishes, ensuring every bite is a delightful experience.
+          </p>
       </div>
+      <img src={OfferImg} alt="About Us" className="offer-image" onClick={() => OfferDetail()}/>
+
     </div>
     {location.pathname === "/about" && <HomeFooter />}
     </>

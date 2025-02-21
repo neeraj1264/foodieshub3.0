@@ -1,72 +1,40 @@
  .modeldialog{
-    position: fixed;
-    bottom: 2px;
-    background: var(--in);
-    display: block;
-    padding-left: 0px;
-    margin-top: 3rem;
-  }
-  .modal-body{
-    background: var(--in);
-    color: whitesmoke;
-  }
+  margin:   3rem 0 0 0;
+}
 .modalfooter {
-  background: var(--in);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  justify-content: space-between;
-  left: 0;
+    background: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
 }
 .modal-backdrop.show {
     opacity: var(--bs-backdrop-opacity);
     background: white;
 }
 .quantity-update{
-  background-color: var(--out);
-  border-radius: .7rem;
-  color: var(--yellow);
+    background-color: #ffeded;
+    border-radius: .7rem;
 }
-.table-striped>tbody>tr:nth-of-type(odd)>*{
-  background: var(--out);
-  color: whitesmoke;
-}
-.table-bordered>:not(caption)>*>*{
-  background: var(--in);
-  color: whitesmoke;
-}
-.modal-header .btn-close {
-  filter: invert(1);
-}
-
 .addtocart{
-    background-color: var(--yellow);
+    background-color: var(--bg);
     color: white;
     border: none;
 }
 .modalheader{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: var(--in);
-  z-index: 999;
-  left: 0;
-  color: ghostwhite;
-  border-radius: 0;  
-}
-
-.modalheader img {
-  max-width: 5rem;
-  height: 2rem;
-  border-radius: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 999;
 }
 input[type="radio"] {
-   accent-color: var(--yellow);
+   accent-color: var(--bg);
    border: 1px solid red;
   }
   .form-check-input:checked {
-    background-color: var(--yellow);
-    border-color: var(--yellow);
+    background-color: var(--bg);
+    border-color: var(--bg);
   }
   .form-check-input{
     border: 2px solid grey;
