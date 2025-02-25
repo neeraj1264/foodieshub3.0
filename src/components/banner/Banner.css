@@ -83,7 +83,7 @@ bottom: -14px;
 
 .whatsapp-button {
   position: fixed;
-  bottom: 2rem; /* Adjust as needed */
+  bottom: .5rem; /* Adjust as needed */
   right: 20px;  /* Adjust as needed */
   background-color: var(--yellow); /* WhatsApp green */
   color: white;
@@ -140,7 +140,7 @@ bottom: -14px;
 .special-img{
   width: 90%;
   margin: 20% 5% 0%;
-  height: 65vh;
+  height: 70vh;
 }
 .special-text{
   text-align: center;

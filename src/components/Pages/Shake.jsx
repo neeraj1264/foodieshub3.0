@@ -9,7 +9,7 @@ const Shake = () => {
   
   return (
     <>
-      <h2 id='shake' className='category-header'>Delicious Shakes</h2>
+      <h2 id='shakes' className='category-header'>Delicious Shakes</h2>
       {renderCards(ShakesData)}
     </>
   );
