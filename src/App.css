@@ -3,15 +3,10 @@ a {
 }
 :root {
   --bg: #d32e2e;
-  --out:  linear-gradient(to right, #120f0f 0%, black 40%, #1f1001 100%);
-  --in: linear-gradient(
-    to right,
-    #000000 0%,
-    #111111 40%,
-    #1a1a1a 100%
-  );;
+  --out: linear-gradient(to right, #143348 0%, black 40%, #151617 100%);
+  --in: linear-gradient(to right, #000000 0%, #111111 40%, #1a1a1a 100%);
   --light: #edf2f7;
-  --yellow: #d14a00;
+  --yellow: #198eff;
   /* --yellow: --yellow; */
   background: var(--out);
 }
@@ -39,7 +34,7 @@ body.dark-theme {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
 }
 .hr {
   margin: 0.3rem 0;
@@ -190,7 +185,7 @@ body.dark-theme {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   background: var(--in);
   color: white;
   box-shadow: 0px -3px 4px 0px black;
@@ -216,7 +211,7 @@ body.dark-theme {
   font-weight: bold;
   background: var(--out);
   color: white;
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 0.5rem;
   margin: 0;
   border: 1px solid #ddd;
@@ -225,7 +220,7 @@ body.dark-theme {
 
 .menu-search {
   flex-grow: 1;
-  padding:  .5rem;
+  padding: 0.5rem;
   font-size: 1rem;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -283,8 +278,8 @@ body.dark-theme {
 .outer-card {
   position: fixed;
   top: 15%;
-  left: 15%;
-  width: 70%;
+  left: 10%;
+  width: 80%;
   background: var(--in);
   z-index: 1000;
   display: flex;
@@ -400,11 +395,11 @@ body.dark-theme {
   border-radius: 0 0 1rem 1rem;
   font-family: initial;
 }
-.not-found{
+.not-found {
   color: white;
   text-align: center;
   margin: auto;
 }
-.not-found img{
+.not-found img {
   width: 60%;
 }

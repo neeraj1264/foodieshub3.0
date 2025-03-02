@@ -112,24 +112,26 @@ const MyCarousel = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
-    audioRef.current = new Audio("/audio/shiva.mp3"); // Ensure this file is in the public folder
-    audioRef.current.loop = false; // Loop audio if needed
-
-    const handleScroll = () => {
-      if (!isPlaying) {
-        audioRef.current
-          .play()
-          .then(() => {
-            setIsPlaying(true);
-            window.removeEventListener("scroll", handleScroll); // Remove event after playing once
-          })
-          .catch((err) => console.log("Autoplay blocked:", err));
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [isPlaying]);
+    if (location.pathname === "/") { // Check if the user is on the home page
+      audioRef.current = new Audio("/audio/india.mp3"); // Ensure this file is in the public folder
+      audioRef.current.loop = false; // Loop audio if needed
+  
+      const handleScroll = () => {
+        if (!isPlaying) {
+          audioRef.current
+            .play()
+            .then(() => {
+              setIsPlaying(true);
+              window.removeEventListener("scroll", handleScroll); // Remove event after playing once
+            })
+            .catch((err) => console.log("Autoplay blocked:", err));
+        }
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }
+  }, [isPlaying, location.pathname]);
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
@@ -167,7 +169,7 @@ const MyCarousel = () => {
     <>
       <Header />
       <img
-        src="/audio/msv2.gif"
+        src="/audio/ivz3.jpeg"
         alt="Special Offer"
         className="special-img"
         onClick={() => {
@@ -175,7 +177,7 @@ const MyCarousel = () => {
         }}
       />
       <p className="special-text">
-        Invoke Shiva’s Blessings with Every Bite! Har Har Mahadev! 🌙🍽️
+      From Kickoff to Last Over – Fuel Your Match Fever with Delicious Food! 🌭🍟
       </p>
       <Hero />
       <Services />
