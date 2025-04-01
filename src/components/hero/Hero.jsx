@@ -21,6 +21,16 @@ const Hero = () => {
   
   return (
     <div {...handlers} className="container-xxl py-1 bg-dark hero-header mb-5">
+           {/* Image Click Redirect */}
+           <div className="col-lg-6 text-center text-lg-end overflow-hidden">
+            <img
+              className="img-fluid"
+              src=".\img\pizza1.png"
+              alt="Hero Section"
+              onClick={handleRedirect}
+              style={{ cursor: "pointer" }}
+            />
+          </div>
       <div className="container my-5 py-1">
         <div className="row align-items-center g-5">
           <div className="col-lg-6 text-center text-lg-start">
@@ -41,16 +51,6 @@ const Hero = () => {
             </button>
           </div>
           
-          {/* Image Click Redirect */}
-          <div className="col-lg-6 text-center text-lg-end overflow-hidden">
-            <img
-              className="img-fluid"
-              src=".\img\pizza1.png"
-              alt="Hero Section"
-              onClick={handleRedirect}
-              style={{ cursor: "pointer" }}
-            />
-          </div>
         </div>
       </div>
     </div>

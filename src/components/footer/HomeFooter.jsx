@@ -98,7 +98,7 @@ const HomeFooter = () => {
         </div>
       </div>
       <div className="home-footer-links">
-        <p>Copyright © foodieshub.online</p>
+        <p>Copyright © https://foodieshub3-0.vercel.app/</p>
         <p> All Rights Reserved.</p>
         <span>Design by Neeraj 70158-23645</span>
       </div>

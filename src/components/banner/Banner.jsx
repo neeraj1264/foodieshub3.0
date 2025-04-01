@@ -168,7 +168,7 @@ const MyCarousel = () => {
   return (
     <>
       <Header />
-      <img
+      {/* <img
         src="/audio/ivz3.jpeg"
         alt="Special Offer"
         className="special-img"
@@ -178,7 +178,7 @@ const MyCarousel = () => {
       />
       <p className="special-text">
       From Kickoff to Last Over – Fuel Your Match Fever with Delicious Food! 🌭🍟
-      </p>
+      </p> */}
       <Hero />
       <Services />
       <About />

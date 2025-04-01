@@ -4,6 +4,7 @@
 
 .hero-header img {
     animation: imgRotate 50s linear infinite;
+    margin-top: 4rem;
 }
 .container{
     background: transparent;
