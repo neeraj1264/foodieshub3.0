@@ -111,27 +111,27 @@ const MyCarousel = () => {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  useEffect(() => {
-    if (location.pathname === "/") { // Check if the user is on the home page
-      audioRef.current = new Audio("/audio/india.mp3"); // Ensure this file is in the public folder
-      audioRef.current.loop = false; // Loop audio if needed
+  // useEffect(() => {
+  //   if (location.pathname === "/") { // Check if the user is on the home page
+  //     audioRef.current = new Audio("/audio/india.mp3"); // Ensure this file is in the public folder
+  //     audioRef.current.loop = false; // Loop audio if needed
   
-      const handleScroll = () => {
-        if (!isPlaying) {
-          audioRef.current
-            .play()
-            .then(() => {
-              setIsPlaying(true);
-              window.removeEventListener("scroll", handleScroll); // Remove event after playing once
-            })
-            .catch((err) => console.log("Autoplay blocked:", err));
-        }
-      };
+  //     const handleScroll = () => {
+  //       if (!isPlaying) {
+  //         audioRef.current
+  //           .play()
+  //           .then(() => {
+  //             setIsPlaying(true);
+  //             window.removeEventListener("scroll", handleScroll); // Remove event after playing once
+  //           })
+  //           .catch((err) => console.log("Autoplay blocked:", err));
+  //       }
+  //     };
   
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }
-  }, [isPlaying, location.pathname]);
+  //     window.addEventListener("scroll", handleScroll);
+  //     return () => window.removeEventListener("scroll", handleScroll);
+  //   }
+  // }, [isPlaying, location.pathname]);
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
