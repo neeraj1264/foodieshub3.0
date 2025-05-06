@@ -36,8 +36,8 @@ const Header = ({ headerName, setSearch, onClick }) => {
 
    // List of menu image paths (Update these paths based on your setup)
  const menuImages = [
-  "/menu/menu1.jpg",
-  "/menu/menu2.jpg",
+  "/menu/menu1.png",
+  "/menu/menu2.png",
 ];
 
  // Function to download all images directly
