@@ -5,7 +5,7 @@ import "./Category.css";
 // Import all data arrays
 import {
   BurgerData,
-  ChaapData,
+  // ChaapData,
   DinnerData,
   GarlicBreadData,
   JuiceData,
@@ -37,7 +37,7 @@ const categoryToDataMap = {
   TossUp_Treat_Combo: special7data,
   Match_Winner_Meal: special8data, 
   burger: BurgerData,
-  chaap: ChaapData,
+  // chaap: ChaapData,
   dinner: DinnerData,
   garlicBread: GarlicBreadData,
   juice: JuiceData,
@@ -65,7 +65,7 @@ const categories = [
     { id: 5, image: "/img/pizza.png",     name: 'garlicBread'},
     { id:10, image: "/img/pizza.png",     name: 'shakes'},
     { id:11, image: "/img/pizza.png",     name: 'snacks'},
-    { id: 3, image: "/img/pizza.png",     name: 'chaap'},
+    // { id: 3, image: "/img/pizza.png",     name: 'chaap'},
     { id: 6, image: "/img/pizza.png",     name: 'juice'},
     { id:12, image: "/img/pizza.png",     name: 'wrap'},
     { id: 4, image: "/img/pizza.png",     name: 'dinner'},

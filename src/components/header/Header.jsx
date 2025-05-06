@@ -45,7 +45,7 @@ const Header = ({ headerName, setSearch, onClick }) => {
   menuImages.forEach((imageUrl, index) => {
     const link = document.createElement("a");
     link.href = imageUrl;
-    link.download = `menu${index + 1}.jpg`; // Sets the filename for the downloaded image
+    link.download = `menu${index + 1}.png`; // Sets the filename for the downloaded image
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

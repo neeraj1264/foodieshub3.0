@@ -27,7 +27,7 @@ import {
   special8data,
   WrapData,
 } from "./components/data/FoodData";
-import Chaap from "./components/Pages/Chaap";
+// import Chaap from "./components/Pages/Chaap";
 import Pizza from "./components/Pages/Pizza/Pizza";
 import Pasta from "./components/Pages/Pasta/Pasta";
 import Burger from "./components/Pages/Burger/Burger";
@@ -64,7 +64,7 @@ const menuItems = [
   { name: "GarlicBread", component: <GarlicBread />, data: GarlicBreadData },
   { name: "Shakes", component: <Shake />, data: ShakesData },
   { name: "Snacks", component: <Snacks />, data: SnacksData },
-  { name: "Chaap", component: <Chaap />, data: ChaapData },
+  // { name: "Chaap", component: <Chaap />, data: ChaapData },
   { name: "Juice", component: <Juice />, data: JuiceData },
   { name: "Wrap", component: <Wrap/>, data: WrapData },
   { name: "Dinner",  component: <Dinner />,  data: DinnerData,},
