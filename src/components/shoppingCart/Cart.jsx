@@ -174,53 +174,59 @@ const Cart = ({ id }) => {
     }
   }, [cartItems]);
 
-  const handlePlaceOrder = () => {
-    const whatsappNumber = "+917015823645";
-    // const whatsappNumber = "+917015823645";
+const handlePlaceOrder = async () => {
+ const total = calculateTotal();
 
-    // Construct the WhatsApp message
-    function getRandom4DigitNumber() {
-      return Math.floor(1000 + Math.random() * 9000);
+  // Generate order summary
+  const orderSummary = cartItems.map(item => {
+    const base = `${item.name} x${item.quantity}`;
+    const toppings = item.toppings?.map(t => t.name).join(", ");
+    const cheeses = item.cheeses?.map(c => c.name).join(", ");
+    return `${base}${toppings ? " | Toppings: " + toppings : ""}${cheeses ? " | Addons: " + cheeses : ""}`;
+  }).join("; ");
+
+  const message = `New Order ₹${total}`;
+
+  const ONESIGNAL_APP_ID = '3aba1fe9-21ec-4265-8d8d-d3f517202622';
+
+  const payload = {
+    app_id: ONESIGNAL_APP_ID,
+    included_segments: ["Subscribed Users"], // or use `filters` for tags
+    filters: [
+      { field: "tag", key: "user_type", relation: "=", value: "kitchen" }
+    ],
+    headings: { en: "New Order Received" },
+    contents: { en: message },
+    android_sound: "notify",
+    android_channel_id: "da16f0fa-57ee-4e0c-9153-5e185d74d61d",
+    priority: 10,
+    android_visibility: 1,
+    android_group: "order_group",
+    android_group_message: { "en": "You have new orders" },
+     data: {
+      orderId: Date.now().toString(), // Simulated order ID
+      totalAmount: total,
+      items: cartItems.map(item => ({
+        name: item.name,
+        quantity: item.quantity,
+        toppings: item.toppings || [],
+        cheeses: item.cheeses || [],
+        total: calculateTotalForcartItem(item)
+      }))
     }
-    const orderId = getRandom4DigitNumber();
+  }
 
-    // Retrieve the table number (either from localStorage or Context)
-  const tableNumber = localStorage.getItem("tableNumber") || "";
-  const tableMessage = tableNumber ? `Table no.  : *${tableNumber}*` : "";
+  await fetch("https://onesignal.com/api/v1/notifications", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: "Basic os_v2_app_hk5b72jb5rbgldmn2p2roibgeljybjt6skfui25hjvqqqitn7fenqpsllfk3ydc43f5efgezvzxopjklhvnjx4kymnwddolypisy6ga" // from OneSignal dashboard
+    },
+    body: JSON.stringify(payload)
+  });
+  toast.success("Order placed successfully!", toastOptions);
+};
 
-    const orderDetails = cartItems.map((item) => {
-      const addonsDetails = item.addons
-        ? item.addons.map((addon) => `Addons\n${addon.name} + ₹${addon.price}\n`)
-        : [];
-  
-        const cheesesDetails = item.cheeses
-        ? item.cheeses.map((cheese) => `${cheese.name} + ₹${cheese.price}\n\n`)
-        : [];
-  
-      return `${item.quantity}.0 x ${item.name}= ${calculateTotalForItem(item)}\n${addonsDetails.join("\n")}\n${cheesesDetails.join("")}`;
-    });
-
-   const productDetails = orderDetails.join("");
-  const total = calculateTotal();
-
-    const message = `
-Order      : *ORD-${orderId}*
-Amount   : *₹${total}*
-${tableMessage}
-    ----------Items----------\n
-${productDetails}
-Service Charge = ₹ 20.00
-`;
-
-    const whatsappLink =
-      "https://api.whatsapp.com/send?phone=" +
-      whatsappNumber +
-      "&text=" +
-      encodeURIComponent(message);
-
-    window.open(whatsappLink, "_blank");
- 
-  };
 
   return (
     <>
